@@ -413,6 +413,58 @@
       transform: scale(1.03);
     }
 
+    /* Film CTA (top priority) */
+    .film-cta {
+      text-align: center;
+      padding: 1.6rem 1.4rem;
+      border-radius: 1rem;
+      background: radial-gradient(circle at top left, rgba(250, 204, 21, 0.12), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.10), transparent 55%),
+                  radial-gradient(circle at top, rgba(15, 23, 42, 0.92), #020617);
+      border: 1px solid rgba(250, 204, 21, 0.25);
+    }
+
+    .film-eyebrow {
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .film-title {
+      font-size: 1.55rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.45rem;
+    }
+
+    .film-subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 58ch;
+      margin: 0 auto 1.1rem;
+    }
+
+    .film-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.3rem;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      color: #111827;
+      border: none;
+    }
+
+    .film-link-note {
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
     footer {
       margin-top: 2rem;
       padding-top: 1.3rem;
@@ -441,12 +493,14 @@
           <span class="pill pill--accent">Redding Christian School &middot; Palo Cedro, CA</span>
           <span class="pill">Height: 5'10"</span>
           <span class="pill">Weight: 165 lbs</span>
-          <span class="pill">Jersey: #11 (JV), #32 (Varsity)</span>
+          <span class="pill">Jersey: #11 (JV), #17 &amp; #32 (Varsity)</span>
         </div>
 
         <div class="hero-summary">
-          Versatile two-way player and multi-sport athlete (football, basketball, track). 
+          Versatile two-way player and multi-sport athlete (football, track).
           Started at Middle Linebacker and Running Back on JV, then moved up mid-season to become a starting Cornerback on Varsity during a playoff run.
+          Currently in an off-season body transformation focused on adding 10&ndash;15 pounds of lean muscle by June, improving quickness, and working with a personal trainer for position-specific skill development.
+          For his Junior-year varsity season, his primary focus will be Wide Receiver, Cornerback, and Middle Linebacker.
         </div>
 
         <div class="hero-buttons">
@@ -459,14 +513,13 @@
         </div>
 
         <div class="note-to-coaches">
-          <strong>Note to coaches:</strong> Timed measurables (40-yard dash, strength numbers) and updated season statistics will be added as they are recorded. HUDL highlights link will be included once available.
+          <strong>Note to coaches:</strong> Timed measurables (40-yard dash, strength numbers) and updated season statistics will be added as they are recorded. See YouTube link below for season highlights.
         </div>
       </div>
 
       <div class="hero-photo">
         <div class="hero-photo-inner">
           <div class="hero-photo-main">
-            <!-- HERO IMAGE: replace path if needed -->
             <img src="IMG_4548.jpeg" alt="Jonah Day - Cornerback action photo" />
           </div>
           <div class="hero-photo-caption">
@@ -476,6 +529,29 @@
         </div>
       </div>
     </header>
+
+    <!-- FILM (TOP PRIORITY) -->
+    <section class="section">
+      <h2 class="section-title"><span>Film</span></h2>
+      <div class="card film-cta">
+        <div class="film-eyebrow">Recruiting Film</div>
+        <div class="film-title">Sophomore Season Highlights</div>
+        <div class="film-subtitle">
+          Click below to view Jonah's Sophomore season highlights. This link opens in a new tab for easy viewing on any device.
+        </div>
+
+        <a class="film-link"
+           href="https://www.youtube.com/watch?v=RY_f0TGeS-U"
+           target="_blank"
+           rel="noopener">
+          Click Here for Sophomore Season Highlights
+        </a>
+
+        <div class="film-link-note">
+          If you prefer, copy/paste this URL: https://www.youtube.com/watch?v=RY_f0TGeS-U
+        </div>
+      </div>
+    </section>
 
     <!-- SNAPSHOT -->
     <section class="section">
@@ -519,7 +595,7 @@
           <div class="card-header">Positions & Responsibilities</div>
           <div class="stat-row">
             <span class="stat-label">Varsity</span>
-            <span class="stat-value">Starting Cornerback (#31)</span>
+            <span class="stat-value">Starting Cornerback (#17 / #32)</span>
           </div>
           <div class="stat-row">
             <span class="stat-label">JV Defense</span>
@@ -608,10 +684,6 @@
             <span class="stat-value">Redding Christian</span>
           </div>
           <div class="stat-row">
-            <span class="stat-label">Basketball</span>
-            <span class="stat-value">Redding Christian</span>
-          </div>
-          <div class="stat-row">
             <span class="stat-label">Track</span>
             <span class="stat-value">Redding Christian</span>
           </div>
@@ -628,7 +700,6 @@
       <div class="card">
         <div class="bio-layout">
           <div class="bio-photo-wrap">
-            <!-- BIO IMAGE -->
             <img src="jonah.jpg" alt="Jonah Day portrait" />
           </div>
           <div class="bio">
@@ -648,7 +719,6 @@
       <h2 class="section-title"><span>Photo</span> Gallery</h2>
       <div class="card">
         <div class="gallery-grid">
-          <!-- GALLERY IMAGES -->
           <div class="gallery-item">
             <img src="IMG_4546.jpeg" alt="Jonah Day - game action 1" />
           </div>
@@ -668,7 +738,7 @@
       </div>
     </section>
 
-    <!-- STATS & HIGHLIGHTS PLACEHOLDER -->
+    <!-- STATS PLACEHOLDER -->
     <section class="section">
       <h2 class="section-title"><span>Stats</span> & Highlights</h2>
       <div class="grid">
@@ -690,9 +760,9 @@
 
         <div class="card">
           <div class="card-sub">Film</div>
-          <div class="card-header">HUDL / Video Links</div>
+          <div class="card-header">Video Links</div>
           <div class="highlight-placeholder">
-            HUDL highlight link will be added here once available.
+            https://www.youtube.com/watch?v=RY_f0TGeS-U
             <br /><br />
             <strong>Planned:</strong><br />
             &bull; Varsity CB highlights<br />
